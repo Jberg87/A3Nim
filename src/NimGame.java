@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class NimGame {
 
-	int players;
-	int matches;
-	int matchesGrabbed;
-	int turn = 0;
-	boolean matchesRemaining = true;
+	private int players;
+    private int matches;
+    private int matchesGrabbed;
+    private int turn = 0;
+    private boolean matchesRemaining = true;
 
 	public int startup() {
 		System.out.println("Let's play a game of Nim");
@@ -25,8 +25,7 @@ public class NimGame {
 				System.out.println();
 				validAmount = true;
 			} else {
-				try {
-				}// Voor het invullen van een string krijg ik de
+				try {} // Voor het invullen van een string krijg ik de
 					// InputMismatchExeption niet gecatched...
 				catch (InputMismatchException e) {
 					System.out
@@ -41,7 +40,7 @@ public class NimGame {
 		Player user = new Player();
 		int matches = m;
 
-		while (matchesRemaining == true) {
+		while (matchesRemaining) {
 			int grabMax;
 			if (matches < 4) {
 				grabMax = matches;
@@ -87,7 +86,6 @@ public class NimGame {
 			System.out.println("PC2 loses, you win!");
 
 		}
-		
 
 	}
 }
