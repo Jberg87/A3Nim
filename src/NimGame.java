@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class NimGame {
 
-	int players;
+	private int players;
 	int matches;
 	int matchesGrabbed;
 	int turn = 0;
