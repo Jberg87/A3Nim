@@ -2,6 +2,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Player {
+	
+	// Jesper is awesome   <-- moet er 100% in
 
 	public int grabMatches(int manualOrAuto, int matchesRemaining, int grabMax) {
 
